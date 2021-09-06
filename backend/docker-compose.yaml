@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  sydpro_backend:
+    build: .
+    restart: always
+    image: sydpro_backend:latest
+    container_name: sydpro_backend
+    ports:
+      - "3000:3000"
